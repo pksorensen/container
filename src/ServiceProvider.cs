@@ -28,7 +28,7 @@ namespace Unity.Microsoft.DependencyInjection
             {
                 return _container.Resolve(serviceType);
             }
-            catch  { /* Ignore */}
+            catch  { throw; }
 
             return null;
         }
